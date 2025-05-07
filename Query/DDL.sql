@@ -86,7 +86,7 @@ ALTER TABLE comment
     FOREIGN KEY (board_number)
     REFERENCES board (board_number);
 
-CREATE USER 'developer'@'*' IDENTIFIED BY 'Passw0rd!';
+CREATE USER 'developer'@'%' IDENTIFIED BY 'Passw0rd!';
 
 CREATE VIEW board_list_view AS
 SELECT 
