@@ -4,6 +4,7 @@ import java.time.Instant;
 import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import io.jsonwebtoken.Claims;
@@ -11,8 +12,10 @@ import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 
 @Component
-public abstract class JwtProvider {
-    private String secretKey = "S3cr3K3y";
+public class JwtProvider {
+
+    @Value("${secret-key}")
+    private String secretKey;
     
     //Jwt작성
     public String create(String email){
