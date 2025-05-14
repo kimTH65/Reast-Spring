@@ -1,3 +1,3 @@
-import ResponseCode from '../response-code.eunm';
+import ResponseCode from "./response-code.eunm";
     
 export {ResponseCode};
