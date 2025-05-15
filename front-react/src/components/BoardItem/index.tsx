@@ -3,9 +3,11 @@ import './style.css';
 import {BoardListItem}  from 'types/interface';
 import { useNavigate } from 'react-router-dom';
 import defaultProfileImage from 'assets/iamge/default-profile-image.png'
+
 interface Props {
     boardListItem : BoardListItem
 }
+
 //Board List Item Component
 export default function BoardItem({boardListItem}:Props) {
 

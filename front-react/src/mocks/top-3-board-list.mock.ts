@@ -1,6 +1,6 @@
 import { BoardListItem } from "types/interface";
 
-const latestBoardListMock : BoardListItem[] =[
+const top3BoardList : BoardListItem[] =[
     {
         boardNumber: 1,
         title: "첫 번째 게시글",
@@ -36,31 +36,7 @@ const latestBoardListMock : BoardListItem[] =[
         writeDatetime: "2025-05-12T08:45:00Z",
         writerNickname: "닉네임3",
         writerProfileImage: null,
-    },
-    {
-        boardNumber: 4,
-        title: "네 번째 게시글",
-        content: "여기에는 네 번째 게시글의 내용이 들어갑니다.",
-        boardTitleImage: null,
-        favoriteCount: 25,
-        commentCount: 8,
-        viewCount: 456,
-        writeDatetime: "2025-05-13T15:30:00Z",
-        writerNickname: "작성자4",
-        writerProfileImage: null,
-    },
-    {
-        boardNumber: 5,
-        title: "다섯 번째 게시글",
-        content: "다섯 번째 게시글의 일부 내용입니다.",
-        boardTitleImage: null,
-        favoriteCount: 5,
-        commentCount: 0,
-        viewCount: 78,
-        writeDatetime: "2025-05-12T08:45:00Z",
-        writerNickname: "닉네임5",
-        writerProfileImage: null,
     }
 ];
 
-export default latestBoardListMock;
+export default top3BoardList;
